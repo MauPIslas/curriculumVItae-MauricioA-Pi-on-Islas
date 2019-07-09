@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Education = props => (
+const Education = props => ( 
+
     <div className="Education">
         <div className="Education-container">
 
@@ -9,10 +10,9 @@ const Education = props => (
                 <h3>{edu.degree} {edu.institution} 
                     <span>{edu.startDate} - {edu.endDate}</span>
                 </h3>
-                <p>Área de ELectrónica </p>
+                <p>{edu.description}</p>
             </div>
         ))}
-        
         </div>
     </div>
 );

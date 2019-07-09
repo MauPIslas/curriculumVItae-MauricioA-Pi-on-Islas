@@ -34,7 +34,7 @@ const App = ()=>{
                     data={data.experience}
                 />
                 <Certificates
-                    data={data.certificates}
+                    data={data.certificate}
                 />
                 <Skills
                 

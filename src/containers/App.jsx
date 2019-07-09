@@ -8,7 +8,11 @@ import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
 
+import useGetData from '../hooks/useGetData';
+
 const App = ()=>{
+    const data = useGetData();
+    console.log(data);
     return(
         <Main>
             <Sidebar>

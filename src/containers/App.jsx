@@ -22,7 +22,7 @@ const App = ()=>{
                     profession={data.profession}
                     bio={data.bio}
                     address={data.address}
-                    social={FormData.social}
+                    social={data.social}
                 
                 />
             </Sidebar>
@@ -37,7 +37,7 @@ const App = ()=>{
                     data={data.certificate}
                 />
                 <Skills
-                
+                    data={data.skills}
                 />
             </Info>
         </Main>

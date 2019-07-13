@@ -8,6 +8,7 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
+import Loading from '../components/Loading'
 
 import useGetData from '../hooks/useGetData';
 
@@ -24,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 const App = ()=>{
     const data = useGetData();
     console.log(data);
-    return data.length === 0 ? <h1>Cargando...</h1>: (
+    return data.length === 0 ? <Loading/>: (
         <Main>
             <GlobalStyle/>
                 <Sidebar>

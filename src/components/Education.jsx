@@ -2,6 +2,12 @@ import React from 'react';
 import H2Styled from '../styled/H2Styled';
 import H3Styled from '../styled/H3Styled';
 import PStyled from '../styled/PStyled'
+import styled from 'styled-components';
+
+const EduAnchor = styled.a`
+    color:#009688;
+    text-decoration: none;
+`;
 
 const Education = props => ( 
 
@@ -11,8 +17,9 @@ const Education = props => (
 
         {props.data.map((edu, index)=>(
             <div className="Education-item" key={`Edu-${index}`}>
-                <H3Styled>{edu.degree} {edu.institution} 
-                    <span>{edu.startDate} - {edu.endDate}</span>
+                <H3Styled>{edu.degree + " @ "} 
+                    <EduAnchor href={edu.link} target="_blank">{edu.institution } </EduAnchor>
+                    <span>{" / "+ edu.startDate} - {edu.endDate}</span>
                 </H3Styled>
                 <PStyled name={edu.description}/>
             </div>

@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --development"
+    "start": "webpack-dev-server --open --development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,9 @@
   "bugs": {
     "url": "https://github.com/MauPIslas/curriculumVItae-MauricioA-Pi-on-Islas/issues"
   },
-  "homepage": "https://github.com/MauPIslas/curriculumVItae-MauricioA-Pi-on-Islas#readme",
+  "homepage": "https://maupislas.github.io/curriculumVItae-MauricioA-Pi-on-Islas/index.html",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"

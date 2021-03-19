@@ -19,6 +19,7 @@ const AboutImg = styled.img `
     margin: 0 auto;
     display: block;
     box-shadow: 0 0 10px rgba(0,0,0,.6);
+    object-fit: ${(props)=> props.objectFit};
 `;
 
 const AboutName = styled.div`
@@ -55,12 +56,12 @@ const AboutLocation = styled.p`
 `;
 
 
-const About = ({avatar,name,profession,bio,address,social}) => (
+const About = ({avatar,name,profession,bio,address,social,objectFit}) => (
     <AboutStyle>
         <div className="About-container">
             <AboutAvatar>
                 <figure>
-                    <AboutImg src={avatar} alt={name}/>
+                    <AboutImg src={avatar} alt={name} objectFit={objectFit}/>
                 </figure>
             </AboutAvatar>
             <AboutName>

@@ -35,6 +35,7 @@ const App = ()=>{
                         bio={data.bio}
                         address={data.address}
                         social={data.social}
+                        objectFit={data.objectFit}
                         
                         />
                 </Sidebar>

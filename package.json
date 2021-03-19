@@ -22,22 +22,22 @@
   },
   "homepage": "https://maupislas.github.io/curriculumVItae-MauricioA-Pi-on-Islas/index.html",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
+    "gh-pages": "^2.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
-    "@babel/preset-env": "^7.5.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "favicons-webpack-plugin": "0.0.9",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
   }
 }

@@ -59,6 +59,7 @@ const AboutLocation = styled.p`
 const About = ({avatar,name,profession,bio,address,social,objectFit}) => (
     <AboutStyle>
         <div className="About-container">
+            {console.log('here!')}
             <AboutAvatar>
                 <figure>
                     <AboutImg src={avatar} alt={name} objectFit={objectFit}/>

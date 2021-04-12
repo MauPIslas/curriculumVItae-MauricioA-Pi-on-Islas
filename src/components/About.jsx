@@ -2,7 +2,6 @@ import React from 'react';
 import Social from './Social';
 import styled from 'styled-components';
 
-
 const AboutStyle =  styled.div`
     text-align: center;
 `;
@@ -59,7 +58,7 @@ const AboutLocation = styled.p`
 const About = ({avatar,name,profession,bio,address,social,objectFit}) => (
     <AboutStyle>
         <div className="About-container">
-            {console.log('here!')}
+            
             <AboutAvatar>
                 <figure>
                     <AboutImg src={avatar} alt={name} objectFit={objectFit}/>

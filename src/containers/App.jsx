@@ -39,6 +39,7 @@ const App = ()=>{
                         
                         />
                 </Sidebar>
+                {console.log('test')}
                 <Info>
                     <Education
                         data={data.education}

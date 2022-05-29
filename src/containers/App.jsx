@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {createGlobalStyle} from 'styled-components';
 import Main from '../components/Main'
 import Sidebar from '../components/Sidebar';
@@ -23,7 +23,11 @@ const GlobalStyle = createGlobalStyle`
 
 const App = ()=>{
     const data = userData;
-    return data.length === 0 ? <Loading/>: (
+    const [counter, setCounter] = useState(0); 
+    setTimeout(()=>{
+        setCounter(1);
+    },1000)
+    return counter === 0 ? <Loading/>: (
         <Main>
             <GlobalStyle/>
                 <Sidebar>

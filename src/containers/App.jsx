@@ -9,8 +9,7 @@ import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
 import Loading from '../components/Loading'
-
-import useGetData from '../hooks/useGetData';
+import userData from '../hooks/userData.json'
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -23,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const App = ()=>{
-    const data = useGetData();
+    const data = userData;
     return data.length === 0 ? <Loading/>: (
         <Main>
             <GlobalStyle/>

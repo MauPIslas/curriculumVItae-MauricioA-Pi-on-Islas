@@ -11,13 +11,13 @@ const ExpAnchor = styled.a`
 
 const Experience = props => (
     <div className="Experience">
-        <H2Styled name="Experience"/>
+        <H2Styled name="Experiencia:"/>
         <div className="Experience-container">
             {props.data.map((exp, index)=>(
                 
             <div className="Experience-item" key={`Exp${index}`}>
                 <H3Styled>{exp.jobTitle +` @ `} 
-                    <ExpAnchor href={exp.link}>{exp.company} </ExpAnchor>
+                    <ExpAnchor href={exp.link} target="_blank">{exp.company} </ExpAnchor>
                     <span>{'/ '+ exp.startDate} - {exp.endDate}</span>
                 </H3Styled>
                 <PStyled name={exp.jobDescription}/>

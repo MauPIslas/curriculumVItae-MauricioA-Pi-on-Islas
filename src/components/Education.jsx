@@ -12,7 +12,7 @@ const EduAnchor = styled.a`
 const Education = props => ( 
 
     <div className="Education">
-        <H2Styled name="Education"/>
+        <H2Styled name="Estudios:"/>
         <div className="Education-container">
 
         {props.data.map((edu, index)=>(

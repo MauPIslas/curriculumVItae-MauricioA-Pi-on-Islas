@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --development",
+    "start": "webpack-dev-server --open --mode development",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -22,25 +22,25 @@
   },
   "homepage": "https://maupislas.github.io/curriculumVItae-MauricioA-Pi-on-Islas/index.html",
   "dependencies": {
-    "gh-pages": "^2.2.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "gh-pages": "^4.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/preset-env": "^7.13.15",
-    "@babel/preset-react": "^7.13.13",
-    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "favicons-webpack-plugin": "0.0.9",
+    "favicons-webpack-plugin": "5.0.2",
     "file-loader": "^6.2.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "image-webpack-loader": "^7.0.1",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.2"
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
   }
 }

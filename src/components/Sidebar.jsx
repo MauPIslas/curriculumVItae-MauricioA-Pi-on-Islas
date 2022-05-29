@@ -1,5 +1,4 @@
 import React from 'react';
-import img from '../images/OGIMAGEMAU.jpg'
 
 const Sidebar = ({children}) =>(
     <div className="Sidebar">

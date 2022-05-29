@@ -25,6 +25,10 @@ const SocialAnchor = styled.a`
 
 const SocialIcon = styled.i`
     color: ${props => props.theme.color};
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    :hover {
+        transform: translateY(-5px);
+    }
 
 `;
 
